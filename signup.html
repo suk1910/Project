@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create an account here!</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=play">
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<script type="text/javascript">
+
+		
+		let btn = document.getElementById("btn");
+		btn.addEventListener("click",function()
+		{
+			var phone=document.getElementById("phone").value;
+			/*var regx=/^[6-9]\d{9}$/;
+
+			var Email=document.getElementById('email').value;
+			var regex=/^([a-z A-Z 0-9 \.-]+)@([a-z A-Z 0-9 -]+).([a-z]{2,20})$/*/
+
+			if (/*regx.test(phone)||*/phone=="")
+			{
+				swal ( "Oops" ,  "Something went wrong!" ,  "error" )
+			}
+			else
+			{
+				swal ( "Great!" , "Congratulations!" ,  "success" )
+			}
+
+		})
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+	<center>
+		<div class="signup">
+			<form method="GET">
+
+				<h2 style="color: skyblue;">Sign Up</h2>
+
+				<input type="text" name="Username" placeholder="Username"><br><br>
+
+
+				<input id="phone" type="text" name="Mobile" placeholder="Mobile"><br><br>
+
+				<!--<label id="lbphone" style="color: tomato; visibility: hidden;">Invalid Mobile</label>-->
+
+				<input id="email" type="email" name="Email"
+				placeholder="Email"><br><br>
+
+				<!--<label id="lbemail" style="color: tomato; visibility: hidden;">Invalid Email</label>-->
+
+				<input type="password" name="pass"
+				placeholder="Password"><br><br>
+
+				<a href="">
+					<button id="btn" class="swagbtn" 
+					 >
+					Sign Up</button> 
+				</a>
+			</form>
+		</div>
+	</center>
+</body>
+</html>

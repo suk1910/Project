@@ -1,0 +1,65 @@
+body
+{
+	background: url("taxi3.jpeg");
+	background-size: cover;
+	color: #fff;
+	font-family: Tahoma,Geneva,sans-serif;
+
+}
+.signup
+{
+	background-color: rgba(40,62,80,0.6);
+	margin-top: 160px;
+	padding: 40px;
+	height: 380px;
+	display: inline-block;
+	margin: auto;
+	width: 250px;
+	margin-top: 160px;
+}
+form
+{
+	text-align: center;
+	width: 240px;
+}
+input
+{
+	width: 200px;
+	text-align: center;
+	background: transparent;
+	border:none; 
+	border-bottom: 1px white solid;
+	font-family: 'play',sans-serif;
+	font-size: 16px;
+	padding: 10px 0;
+	outline: none;
+	color: white;
+}
+
+.swagbtn
+{
+	margin-top: 50px;
+	width: 130px;
+	background: #fff;
+	color:#000;
+	border-radius: 15px;
+	line-height: 20px;
+	padding: 10px 0;
+	border:none;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	outline: none;
+
+}
+.swagbtn:hover
+{
+	color: #fff;
+	background-color: skyblue;
+}
+
+::placeholder
+{
+	color:aliceblue;
+}

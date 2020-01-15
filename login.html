@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Your Taxi</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=play">
+
+
+
+
+
+
+    <script type="text/javascript">
+        function validation()
+        {
+            var Mobile = document.getElementById('phone').value;
+            var regx=/^[6-9]\d{9}$/;
+            if (regx.test(Mobile))
+             {
+                 document.getElementById('lbphone').style.visibility="hidden";
+             }
+
+             else
+             {
+                document.getElementById('lbphone').style.visibility="visible";
+             }
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+	<center>
+	<div class="signin">
+    
+        <form method="get">
+    	
+    	<h2 style="color: skyblue">Log In</h2>
+
+    	
+        <input id="phone" name=" Mobile " placeholder="Mobile " required><br><br>
+
+    	<input type="Password" name="Password" placeholder="Password"  required><br>
+        <br>
+
+        <label id="lbphone" style="color: tomato; visibility: hidden;">Invalid Mobile</label>
+  
+       
+
+
+
+       
+    	<a href=""  onclick="validation()">
+    <button class="swagbtn" type="submit" >
+        Log In
+    </button>
+        </a>
+      
+        <br><br>
+
+
+
+
+
+    	<div class="container">
+
+    	
+
+    	<a href="" style="margin-left:13px; font-size: 13px; font-family: Tahoma,Geneva, sans-serif ; ">Forgot Password ?</a>
+        </div>
+
+
+
+
+
+
+
+        <br><br><br><br>
+
+
+        Don't have an account?<a href="signup.html">&nbsp; Sign Up</a>
+
+
+    </form>
+    
+    </div>
+    </center>
+</body>
+</html>
